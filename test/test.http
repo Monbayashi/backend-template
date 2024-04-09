@@ -1,0 +1,31 @@
+### Hello World!
+GET http://localhost:3000/
+
+### CreateUser
+POST http://localhost:3000/v1/user
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "password",
+  "name": "monbayashi joji"
+}
+
+### LoginUser
+POST http://localhost:3000/v1/login
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "password"
+}
+
+### GetUserProfile
+GET http://localhost:3000/v1/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWQiOiIyZDcyMTM4My04OGM0LTQ4MjgtOWQ1OS1mNGUyN2IyMzNmOTciLCJpYXQiOjE3MTA2NTY4NTIsImV4cCI6MTcxMDc0MzI1Mn0.dhbAHnx9uEpPmgBIlPBdCU9g0TuqZW5UMskwTgFIjkE
+
+### DeleteUser
+DELETE http://localhost:3000/v1/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWQiOiIyZDcyMTM4My04OGM0LTQ4MjgtOWQ1OS1mNGUyN2IyMzNmOTciLCJpYXQiOjE3MTA2NTY2MDksImV4cCI6MTcxMDY1NjY2OX0.Q9Nx18EMDL1uiXxaYGWrUzoagdBgUJB686Dh5wDM4HM
